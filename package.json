@@ -1,0 +1,36 @@
+{
+  "name": "bus_background",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server-dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Focus.Wong",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-bootstrap-datetimepicker": "^1.0.1",
+    "angular-ui-bootstrap": "^2.1.2",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "http-proxy-middleware": "^0.17.1",
+    "jquery": "^3.1.0",
+    "node-sass": "^3.8.0",
+    "open": "0.0.5",
+    "postcss-loader": "^0.10.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "ui-router": "^1.0.0-alpha.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

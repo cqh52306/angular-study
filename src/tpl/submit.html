@@ -1,0 +1,68 @@
+<from>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">初始值: </span>
+            <input type="text" ng-change="computeNeed()" ng-model="funding.startingEstimate" class="form-control" placeholder="0" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon">计算后</span>
+            <span class="form-control">{{funding.change}}</span>
+        </div>
+    </div>
+</from>
+<hr>
+<from ng-submit="requestFunding()">
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">初始值: </span>
+            <input type="text" ng-change="computeNeeded()" ng-model="startingEstimate" class="form-control" placeholder="0" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon">计算后</span>
+            <span class="form-control">{{needed}}</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <!--ng-disabled 要用冒号-->
+        <button type="submit" ng-disabled="!startingEstimate" class="btn btn-primary" ng-click="reset()">reset</button>
+    </div>
+</from>
+<hr>
+<h1>Sign Up</h1>
+<from name='addUserForm'>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">First name: </span>
+            <input type="text" ng-model="user.first" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Last name: </span>
+            <input type="text" ng-model="user.last" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Email: </span>
+            <input type="email" ng-model="user.email" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">age: </span>
+            <input type="number" 
+                    ng-model="user.age" 
+                    ng-maxlength="3"
+                    ng-minlength="1"
+                    class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary"  ng-disabled="!addUserForm.$valid">submit</button>
+    </div>
+</from>

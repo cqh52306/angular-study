@@ -1,0 +1,29 @@
+
+.header {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  border-top: 4px solid #ffcc00;
+  border-bottom: 4px solid #ffcc00;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+.canvas {
+  height: 420px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #DDD;
+}
+
+.canvas > div {
+  display: table-cell;
+  vertical-align: middle;
+  //text-align: center;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+
